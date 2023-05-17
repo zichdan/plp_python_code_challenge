@@ -1,4 +1,4 @@
-<b>Random Password Generator<b>
+Random Password Generator
 This is a Python script that generates a random password based on specified criteria.
 
 Prerequisites

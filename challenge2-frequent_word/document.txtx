@@ -1,0 +1,42 @@
+Title: Word Frequency Counter
+
+Description:
+This program reads a text file and counts the occurrences of each word in the file. It then displays the top 10 most frequent words along with their counts.
+
+Usage:
+1. Ensure that the text file to be processed exists in the same directory as the Python script or provide the full path to the file.
+2. Replace 'filename.txt' in the code with the actual name of the text file.
+3. Run the program.
+
+Code Structure:
+1. Importing Modules:
+   - The program begins by importing the necessary modules:
+     - re: Provides regular expression matching operations.
+     - Counter from the collections module: Used to count the occurrences of words.
+
+2. count_words Function:
+   - This function takes the filename of the text file as a parameter.
+   - It reads the content of the file and stores it in the 'text' variable.
+   - It uses regular expressions to extract words from the text, converting them to lowercase.
+   - The Counter class is used to count the occurrences of each word and create a dictionary.
+   - The most_common method of the Counter object is used to obtain the top 10 most frequent words.
+   - The list of top words is returned by the function.
+
+3. Main Program:
+   - The 'filename' variable is set to the name of the text file to be processed.
+   - The count_words function is called with the 'filename', and the resulting list of top words is stored in the 'top_words' variable.
+   - The program prints the header "Top 10 Most Frequent Words:".
+   - It iterates over each word and count in 'top_words', printing them one by one using a formatted string.
+
+Example Usage:
+1. Save the code in a Python script file, e.g., 'word_frequency_counter.py'.
+2. Place the text file you want to process in the same directory as the script or provide the full path to the file.
+3. Replace 'filename.txt' in the code with the name of your text file.
+4. Run the script.
+5. The program will read the file, count the occurrences of each word, and display the top 10 most frequent words along with their counts.
+
+Note:
+- The code assumes that words are defined as sequences of alphanumeric characters (including underscores) delimited by word boundaries (\b). It may not handle certain cases like contractions or hyphenated words correctly.
+- The counting is case-insensitive, meaning that uppercase and lowercase versions of the same word are considered as the same word.
+- If the text file contains special characters or formatting that interferes with word extraction using regular expressions, the results may be inaccurate.
+
