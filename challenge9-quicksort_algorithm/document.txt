@@ -1,0 +1,50 @@
+Title: Random Number Sorting with Quicksort Algorithm
+
+Description:
+This program generates a list of random numbers, sorts them using the Quicksort algorithm, and measures the execution time. The size of the list and the range of random numbers can be customized.
+
+Usage:
+1. Run the program.
+2. Specify the desired size of the list in the 'size' variable.
+3. The program will generate a list of random numbers.
+4. The Quicksort algorithm will be applied to sort the numbers.
+5. The sorted numbers and the execution time will be displayed.
+
+Functions:
+1. generate_random_numbers(size)
+   - Generates a list of random numbers.
+   - Parameters:
+     - size: Integer value specifying the desired size of the list.
+   - Returns:
+     - List of random numbers between 1 and 1000.
+
+2. quicksort(nums)
+   - Sorts a list of numbers using the Quicksort algorithm.
+   - Parameters:
+     - nums: List of numbers to be sorted.
+   - Returns:
+     - Sorted list of numbers.
+
+Main Steps:
+1. Import the necessary libraries: 'random' for generating random numbers and 'time' for measuring execution time.
+2. Define the 'generate_random_numbers' function to generate a list of random numbers.
+3. Define the 'quicksort' function to sort a list of numbers using the Quicksort algorithm.
+4. Specify the desired size of the list using the 'size' variable.
+5. Call the 'generate_random_numbers' function to generate the list of random numbers.
+6. Record the start time using 'time.time()'.
+7. Call the 'quicksort' function to sort the list of numbers.
+8. Record the end time using 'time.time()'.
+9. Calculate the execution time by subtracting the start time from the end time.
+10. Print the sorted numbers and the execution time.
+
+Example Usage:
+1. Sorting a list of 10 random numbers:
+   - size = 10
+   - Generated list: [643, 489, 57, 722, 212, 742, 340, 523, 865, 81]
+   - Sorted numbers: [57, 81, 212, 340, 489, 523, 643, 722, 742, 865]
+   - Execution time: 0.00123456 seconds
+
+Notes:
+- You can modify the 'size' variable to change the size of the random numbers generated.
+- The range of random numbers generated is set to be between 1 and 1000.
+- Feel free to experiment with different input sizes or customize the program to use different sorting algorithms.

@@ -1,0 +1,25 @@
+import random
+import time
+
+def generate_random_numbers(size):
+    return [random.randint(1, 1000) for _ in range(size)]
+
+def quicksort(arr):
+    if len(arr) <= 1:
+        return arr
+    else:
+        pivot = arr[len(arr) // 2]
+        left = [x for x in arr if x < pivot]
+        middle = [x for x in arr if x == pivot]
+        right = [x for x in arr if x > pivot]
+        return quicksort(left) + middle + quicksort(right)
+
+if __name__ == '__main__':
+    size = 20
+    arr = generate_random_numbers(size)
+    print(f"Unsorted: {arr}")
+    start_time = time.time()
+    sorted_arr = quicksort(arr)
+    end_time = time.time()
+    print(f"Sorted: {sorted_arr}")
+    print(f"Execution time: {end_time - start_time}")
