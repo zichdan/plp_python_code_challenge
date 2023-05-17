@@ -1,0 +1,50 @@
+<b>Random Password Generator<b>
+This is a Python script that generates a random password based on specified criteria.
+
+Prerequisites
+To run this script, make sure you have Python installed on your system.
+
+Usage
+Clone this repository or download the script file.
+
+Open a terminal or command prompt.
+
+Navigate to the directory where the script is located.
+
+Run the following command to execute the script:
+
+Copy code
+python generate_password.py
+Functionality
+The script defines a function called generate_password that generates a random password. The password generated will satisfy the following criteria:
+
+Contains at least one uppercase letter
+Contains at least one lowercase letter
+Contains at least one symbol from the set of punctuation marks
+Contains at least two digits
+Has a length between 8 and 20 characters (randomly determined)
+The generated password is then printed to the console.
+
+Implementation Details
+The script uses the random and string modules from the Python Standard Library to generate the password. It performs the following steps:
+
+Defines variables to store sets of uppercase letters, lowercase letters, digits, and symbols.
+Combines all the characters into a single string called all_characters.
+Randomly selects a password length between 8 and 20.
+Enters a while loop to generate random passwords until one that satisfies all the criteria is found.
+Generates a random password by selecting characters from all_characters using a for loop and joining them together.
+Checks if the password meets the required criteria using if statements and any functions.
+Breaks out of the loop and returns the password if it satisfies all the criteria.
+Prints the generated password to the console.
+Example Output
+Here's an example output when running the script:
+
+Copy code
+1P!x&04szu9
+Please note that the generated password will be different each time you run the script.
+
+Feel free to modify the script according to your needs.
+
+
+
+
