@@ -13,8 +13,9 @@ Navigate to the directory where the script is located.
 
 Run the following command to execute the script:
 
-Copy code
-python generate_password.py
+       "python generate_password.py"
+
+
 Functionality
 The script defines a function called generate_password that generates a random password. The password generated will satisfy the following criteria:
 
@@ -38,9 +39,9 @@ Breaks out of the loop and returns the password if it satisfies all the criteria
 Prints the generated password to the console.
 Example Output
 Here's an example output when running the script:
+        "1P!x&04szu9"
 
-Copy code
-1P!x&04szu9
+        
 Please note that the generated password will be different each time you run the script.
 
 Feel free to modify the script according to your needs.
